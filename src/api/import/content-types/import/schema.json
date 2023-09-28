@@ -1,0 +1,103 @@
+{
+  "kind": "collectionType",
+  "collectionName": "imports",
+  "info": {
+    "singularName": "import",
+    "pluralName": "imports",
+    "displayName": "Import",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Make": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "Model": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "Year": {
+      "type": "integer",
+      "required": true
+    },
+    "Price": {
+      "type": "biginteger",
+      "required": true
+    },
+    "Stock": {
+      "type": "string",
+      "required": true
+    },
+    "Seats": {
+      "type": "integer",
+      "required": true
+    },
+    "Trunk": {
+      "type": "integer",
+      "required": true
+    },
+    "Speed": {
+      "type": "integer",
+      "required": true
+    },
+    "Handling": {
+      "type": "integer",
+      "required": true,
+      "max": 5
+    },
+    "Generation": {
+      "type": "string",
+      "required": true
+    },
+    "Image": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "videos",
+        "audios"
+      ]
+    },
+    "Ticket": {
+      "type": "enumeration",
+      "enum": [
+        "Y",
+        "N",
+        "NA"
+      ],
+      "required": true
+    },
+    "Restoration": {
+      "type": "enumeration",
+      "enum": [
+        "Y",
+        "N",
+        "NA"
+      ],
+      "required": true
+    },
+    "Category": {
+      "type": "enumeration",
+      "enum": [
+        "Standard",
+        "Premium",
+        "Exclusive",
+        "Limited",
+        "Exquisite"
+      ],
+      "required": true
+    },
+    "Unmarketable": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    }
+  }
+}
