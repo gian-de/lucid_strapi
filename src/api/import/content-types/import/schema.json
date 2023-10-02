@@ -15,7 +15,7 @@
     "Make": {
       "type": "string",
       "required": true,
-      "unique": true
+      "unique": false
     },
     "Model": {
       "type": "string",
@@ -27,7 +27,7 @@
       "required": true
     },
     "Price": {
-      "type": "biginteger",
+      "type": "integer",
       "required": true
     },
     "Stock": {
@@ -58,7 +58,7 @@
     "Image": {
       "type": "media",
       "multiple": true,
-      "required": true,
+      "required": false,
       "allowedTypes": [
         "images",
         "videos",

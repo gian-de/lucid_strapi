@@ -373,10 +373,10 @@ export interface ApiImportImport extends Schema.CollectionType {
     draftAndPublish: true;
   };
   attributes: {
-    Make: Attribute.String & Attribute.Required & Attribute.Unique;
+    Make: Attribute.String & Attribute.Required;
     Model: Attribute.String & Attribute.Required & Attribute.Unique;
     Year: Attribute.Integer & Attribute.Required;
-    Price: Attribute.BigInteger & Attribute.Required;
+    Price: Attribute.Integer & Attribute.Required;
     Stock: Attribute.String & Attribute.Required;
     Seats: Attribute.Integer & Attribute.Required;
     Trunk: Attribute.Integer & Attribute.Required;
@@ -387,7 +387,7 @@ export interface ApiImportImport extends Schema.CollectionType {
         max: 5;
       }>;
     Generation: Attribute.String & Attribute.Required;
-    Image: Attribute.Media & Attribute.Required;
+    Image: Attribute.Media;
     Ticket: Attribute.Enumeration<['Y', 'N', 'NA']> & Attribute.Required;
     Restoration: Attribute.Enumeration<['Y', 'N', 'NA']> & Attribute.Required;
     Category: Attribute.Enumeration<
