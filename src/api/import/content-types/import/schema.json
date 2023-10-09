@@ -55,16 +55,6 @@
       "type": "string",
       "required": true
     },
-    "Image": {
-      "type": "media",
-      "multiple": true,
-      "required": false,
-      "allowedTypes": [
-        "images",
-        "videos",
-        "audios"
-      ]
-    },
     "Ticket": {
       "type": "enumeration",
       "enum": [

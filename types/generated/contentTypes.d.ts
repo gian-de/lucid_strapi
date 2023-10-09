@@ -387,7 +387,6 @@ export interface ApiImportImport extends Schema.CollectionType {
         max: 5;
       }>;
     Generation: Attribute.String & Attribute.Required;
-    Image: Attribute.Media;
     Ticket: Attribute.Enumeration<['Y', 'N', 'NA']> & Attribute.Required;
     Restoration: Attribute.Enumeration<['Y', 'N', 'NA']> & Attribute.Required;
     Category: Attribute.Enumeration<
